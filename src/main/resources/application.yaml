@@ -1,0 +1,14 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: cloud-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      eager: true  #提前触发Sentinel初始化,使得服务启动后便可通过Sentinel控制台查看
+      transport:
+        port: 8765
+        dashboard: localhost:8089
