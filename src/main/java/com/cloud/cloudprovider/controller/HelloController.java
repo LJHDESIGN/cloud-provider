@@ -32,4 +32,9 @@ public class HelloController {
     public String serviceTestA(@RequestParam(value = "name",defaultValue= "forezp",required = false) String name){
         return helloService.hi(name);
     }
+
+    @RequestMapping("/username")
+    public String get() {
+        return helloService.get();
+    }
 }

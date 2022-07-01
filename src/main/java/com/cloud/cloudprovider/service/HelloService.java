@@ -8,4 +8,6 @@ package com.cloud.cloudprovider.service;
 public interface HelloService {
 
     String hi(String name);
+
+    String get();
 }
