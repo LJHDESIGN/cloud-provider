@@ -1,6 +1,6 @@
 package com.cloud.cloudprovider.controller;
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
+//import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.cloud.cloudprovider.exception.ClientFallBack;
 import com.cloud.cloudprovider.exception.HandlerException;
 import com.cloud.cloudprovider.service.HelloService;
@@ -24,11 +24,11 @@ public class HelloController {
     private HelloService helloService;
 
     @GetMapping("/serviceTestA")
-    @SentinelResource(value="hello/serviceTestA",
-            blockHandlerClass = HandlerException.class,
-            blockHandler = "handlerException",
-            fallbackClass = ClientFallBack.class,
-            fallback = "fallBackA")
+//    @SentinelResource(value="hello/serviceTestA",
+//            blockHandlerClass = HandlerException.class,
+//            blockHandler = "handlerException",
+//            fallbackClass = ClientFallBack.class,
+//            fallback = "fallBackA")
     public String serviceTestA(@RequestParam(value = "name",defaultValue= "forezp",required = false) String name){
         return helloService.hi(name);
     }

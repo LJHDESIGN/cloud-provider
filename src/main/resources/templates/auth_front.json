@@ -1,0 +1,283 @@
+[
+  // 模块
+  {
+    "code": "certification",
+    "name": "方班认证",
+    "parentCode": null,
+    "platform": 1,
+    "type": "MODULE",
+  },
+  {
+    "code": "resources",
+    "name": "创作中心",
+    "parentCode": null,
+    "platform": 2,
+    "type": "MODULE",
+  },
+  {
+    "code": "system",
+    "name": "系统管理",
+    "parentCode": null,
+    "platform": 3,
+    "type": "MODULE",
+  },
+  {
+    "code": "common",
+    "name": "通用",
+    "parentCode": null,
+    "platform": 4,
+    "type": "MODULE",
+  },
+
+  // 目录（系统管理）
+  {
+    "code": "system:user",
+    "name": "用户体系",
+    "parentCode": "system",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "system:log",
+    "name": "日志审计",
+    "parentCode": "system",
+    "type": "DIRECTORY",
+  },
+  // 菜单-（系统管理-用户体系）
+  {
+    "code": "system:user:manage",
+    "name": "用户管理",
+    "parentCode": "system:user",
+    "type": "MENU",
+  },
+  {
+    "code": "system:user:organization",
+    "name": "组织架构",
+    "parentCode": "system:user",
+    "type": "MENU",
+  },
+  {
+    "code": "system:user:role",
+    "name": "角色管理",
+    "parentCode": "system:user",
+    "type": "MENU",
+  },
+  {
+    "code": "system:user:job",
+    "name": "岗位管理",
+    "parentCode": "system:user",
+    "type": "MENU",
+  },
+  {
+    "code": "system:user:setting",
+    "name": "用户设置",
+    "parentCode": "system:user",
+    "type": "MENU",
+  },
+  {
+    "code": "system:user:online",
+    "name": "在线用户",
+    "parentCode": "system:user",
+    "type": "MENU",
+  },
+  // 菜单-（系统管理-日志审计）
+  {
+    "code": "system:log:operate",
+    "name": "操作日志",
+    "parentCode": "system:log",
+    "type": "MENU",
+  },
+  {
+    "code": "system:log:login",
+    "name": "访问日志",
+    "parentCode": "system:log",
+    "type": "MENU",
+  },
+  //按钮
+  //{
+  //    "code": "system:user:manage:create",
+  //    "name": "创建用户",
+  //    "parentCode": "system:user:manage",
+  //    "type": "BUTTON",
+  //},
+
+  // 目录（创作中心）
+  {
+    "code": "resources:creator",
+    "name": "创作中心",
+    "parentCode": "resources",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "resources:manage",
+    "name": "资源管理",
+    "parentCode": "resources",
+    "type": "DIRECTORY",
+  },
+  // 一级菜单-（创作中心-创作中心）
+  {
+    "code": "resources:creator:my",
+    "name": "我的资源",
+    "parentCode": "resources:creator",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:creator:common",
+    "name": "公共资源",
+    "parentCode": "resources:creator",
+    "type": "MENU",
+  },
+  // 二级菜单-（创作中心-我的资源）
+  {
+    "code": "resources:creator:my:question",
+    "name": "题库",
+    "parentCode": "resources:creator:my",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:creator:my:paper",
+    "name": "组卷库",
+    "parentCode": "resources:creator:my",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:creator:my:image",
+    "name": "镜像库",
+    "parentCode": "resources:creator:my",
+    "type": "MENU",
+  },
+  // 二级菜单-（创作中心-公共资源）
+  {
+    "code": "resources:creator:common:question",
+    "name": "题库",
+    "parentCode": "resources:creator:common",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:creator:common:paper",
+    "name": "试卷库",
+    "parentCode": "resources:creator:common",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:creator:common:image",
+    "name": "镜像库",
+    "parentCode": "resources:creator:common",
+    "type": "MENU",
+  },
+  // 一级菜单-（创作中心-资源管理）
+  {
+    "code": "resources:manage:package",
+    "name": "资源包管理",
+    "parentCode": "resources:manage",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:manage:library",
+    "name": "资源库管理",
+    "parentCode": "resources:manage",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:manage:instances",
+    "name": "实例管理",
+    "parentCode": "resources:manage",
+    "type": "MENU",
+  },
+  // 二级菜单-（资源管理-资源库管理）
+  {
+    "code": "resources:manage:library:question",
+    "name": "试题管理",
+    "parentCode": "resources:manage:library",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:manage:library:paper",
+    "name": "试卷管理",
+    "parentCode": "resources:manage:library",
+    "type": "MENU",
+  },
+  {
+    "code": "resources:manage:library:image",
+    "name": "镜像管理",
+    "parentCode": "resources:manage:library",
+    "type": "MENU",
+  },
+
+  // 一级目录（方班认证）
+  {
+    "code": "certification:manager",
+    "name": "管理端",
+    "parentCode": "certification",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "certification:client",
+    "name": "用户端",
+    "parentCode": "certification",
+    "type": "DIRECTORY",
+  },
+  // 二级目录（方班认证）
+  {
+    "code": "certification:client:home",
+    "name": "首页",
+    "parentCode": "certification:client",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "certification:client:my",
+    "name": "我的证书",
+    "parentCode": "certification:client",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "certification:manager:admin",
+    "name": "认证管理",
+    "parentCode": "certification:manager",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "certification:manager:system",
+    "name": "知识体系管理",
+    "parentCode": "certification:manager",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "certification:manager:issuance",
+    "name": "证书发放",
+    "parentCode": "certification:manager",
+    "type": "DIRECTORY",
+  },
+  {
+    "code": "certification:manager:instances",
+    "name": "实例管理",
+    "parentCode": "certification:manager",
+    "type": "DIRECTORY",
+  },
+  // 菜单-（方班认证-认证管理）
+  {
+    "code": "certification:manager:admin:all",
+    "name": "所有认证",
+    "parentCode": "certification:manager:admin",
+    "type": "MENU",
+  },
+  {
+    "code": "certification:manager:admin:initiate",
+    "name": "发起认证",
+    "parentCode": "certification:manager:admin",
+    "type": "MENU",
+  },
+  // 菜单-（方班认证-知识体系管理）
+  {
+    "code": "certification:manager:system:initial",
+    "name": "初始认证",
+    "parentCode": "certification:manager:system",
+    "type": "MENU",
+  },
+  {
+    "code": "certification:manager:system:admin",
+    "name": "体系管理",
+    "parentCode": "certification:manager:system",
+    "type": "MENU",
+  }
+
+]
