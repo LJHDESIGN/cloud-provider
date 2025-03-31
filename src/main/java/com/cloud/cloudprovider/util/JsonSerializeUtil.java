@@ -1,10 +1,9 @@
 package com.cloud.cloudprovider.util;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.cloud.cloudprovider.exception.User2;
-import com.cloud.cloudprovider.exception.User2Son;
+import com.cloud.cloudprovider.model.User2;
+import com.cloud.cloudprovider.model.User2Son;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.type.TypeReference;
 
@@ -17,12 +16,10 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.springframework.util.SerializationUtils;
 import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
 
 import java.io.Serializable;
 import java.lang.reflect.Type;
-import java.util.Objects;
 
 /**
  * @author linjianhui
