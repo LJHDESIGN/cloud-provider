@@ -28,4 +28,9 @@ public class TestConfigUtil {
         return null;
     }
 
+    public static String testCommitB(){
+        String a = "NacosConfig.B";
+        return null;
+    }
+
 }
