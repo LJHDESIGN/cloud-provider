@@ -23,6 +23,10 @@ public class TestConfigUtil {
         return null;
     }
 
+    public static String getBB(){
+        return null;
+    }
+
     public static String testCommitA(){
         String a = "NacosConfig.userName";
         return null;
@@ -33,7 +37,7 @@ public class TestConfigUtil {
         return null;
     }
 
-    public static String testCommitC(){
+    public static String testCommitC() {
         String a = "NacosConfig.C";
         return null;
     }
