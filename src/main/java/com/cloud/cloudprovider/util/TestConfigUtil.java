@@ -23,4 +23,8 @@ public class TestConfigUtil {
         return null;
     }
 
+    public static String getBB(){
+        return null;
+    }
+
 }
