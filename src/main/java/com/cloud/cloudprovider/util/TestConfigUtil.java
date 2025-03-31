@@ -23,4 +23,9 @@ public class TestConfigUtil {
         return null;
     }
 
+    public static String testCommitA(){
+        String a = "NacosConfig.userName";
+        return null;
+    }
+
 }
