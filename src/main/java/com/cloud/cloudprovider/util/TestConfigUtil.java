@@ -39,7 +39,7 @@ public class TestConfigUtil {
 
     public static String testCommitC() {
         String a = "NacosConfig.C";
-        return null;
+        return "null";
     }
 
 }
